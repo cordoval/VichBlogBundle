@@ -22,7 +22,7 @@ class Configuration
         $root = $tb->root('vich_blog')
             ->children()
                 ->scalarNode('db_driver')->cannotBeOverwritten()->isRequired()->end()
-                ->arrayNode('class')
+                ->arrayNode('model')
                     ->isRequired()
                     ->children()
                         ->scalarNode('post')->isRequired()->end()
