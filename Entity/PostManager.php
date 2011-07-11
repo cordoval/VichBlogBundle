@@ -24,6 +24,11 @@ class PostManager extends BasePostManager
     private $repository;
     
     /**
+     * @var string $class
+     */
+    private $class;
+    
+    /**
      * Constructs a new instance of PostManager.
      * 
      * @param Doctrine\ORM\EntityManager $em The entity manager
@@ -33,6 +38,9 @@ class PostManager extends BasePostManager
     {
         $this->em = $em;
         $this->repository = $this->em->getRepository($class);
+        
+        $metadata = $this->em->getClassMetadata($class);
+        $this->class = $metadata->name;
     }
     
     /**
@@ -74,5 +82,15 @@ class PostManager extends BasePostManager
     public function findPostBySlug($slug)
     {
         return $this->repository->findOneBy(array('slug' => $slug));
+    }
+    
+    /**
+     * Gets the post class.
+     * 
+     * @return string The post class name
+     */
+    public function getClass()
+    {
+        return $this->class;
     }
 }
