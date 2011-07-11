@@ -7,6 +7,8 @@
     <mapped-superclass name="Vich\BlogBundle\Entity\Category" table="vb_post">
 
         <field name="name" column="name" type="string" length="255" unique="true" />
+
+        <field name="slug" column="slug" type="string" length="255" unique="true" />
         
         <field name="createdAt" column="created_at" type="datetime" />
         

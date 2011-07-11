@@ -20,6 +20,11 @@ abstract class Tag implements TagInterface
     protected $name;
     
     /**
+     * @var string $slug
+     */
+    protected $slug;
+    
+    /**
      * @var \DateTime $createdAt
      */
     protected $createdAt;
@@ -57,6 +62,26 @@ abstract class Tag implements TagInterface
     public function setName($name)
     {
         $this->name = $name;
+    }
+    
+    /**
+     * Gets the slug.
+     * 
+     * @return string The slug
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+    
+    /**
+     * Sets the slug.
+     * 
+     * @param string $slug The slug
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
     }
     
     /**

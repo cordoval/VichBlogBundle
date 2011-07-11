@@ -9,7 +9,11 @@ namespace Vich\BlogBundle\Model;
  */
 interface CategoryInterface
 {
-    public function getName();
+    function getName();
     
-    public function setName($value);
+    function setName($name);
+    
+    function getSlug();
+    
+    function setSlug($slug);
 }
