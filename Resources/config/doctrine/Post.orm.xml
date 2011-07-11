@@ -14,6 +14,10 @@
 
         <field name="excerpt" column="excerpt" type="text" />
         
+        <field name="active" column="active" type="boolean" />
+        
+        <field name="activateAt" column="activate_at" type="datetime" />
+        
         <field name="createdAt" column="created_at" type="datetime" />
         
         <field name="updatedAt" column="updated_at" type="datetime" />

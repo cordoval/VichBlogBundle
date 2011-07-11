@@ -24,4 +24,12 @@ interface PostInterface
     function getExcerpt();
     
     function setExcerpt($excerpt);
+    
+    function getActive();
+    
+    function setActive($active);
+    
+    function getActivateAt();
+    
+    function setActivateAt($activateAt);
 }

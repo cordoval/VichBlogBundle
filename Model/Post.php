@@ -35,6 +35,16 @@ abstract class Post implements PostInterface
     protected $excerpt;
     
     /**
+     * @var boolean $active
+     */
+    protected $active;
+    
+    /**
+     * @var \DateTime $activateAt
+     */
+    protected $activateAt;
+    
+    /**
      * @var \DateTime $createdAt
      */
     protected $createdAt;
@@ -132,6 +142,46 @@ abstract class Post implements PostInterface
     public function setExcerpt($excerpt)
     {
         $this->excerpt = $excerpt;
+    }
+    
+    /**
+     * Gets whether or not the post is active.
+     * 
+     * @return boolean True if active, false otherwise
+     */
+    public function getActive()
+    {
+        return $this->active;
+    }
+    
+    /**
+     * Sets whether or not the post is active.
+     * 
+     * @param boolean $active True if active, false otherwise
+     */
+    public function setActive($active)
+    {
+        $this->active = $active;
+    }
+    
+    /**
+     * Gets the activate date.
+     * 
+     * @return \DateTime The activate date
+     */
+    public function getActivateAt()
+    {
+        return $this->activateAt;
+    }
+    
+    /**
+     * Sets the activate date.
+     * 
+     * @param type $activateAt The activate date
+     */
+    public function setActivateAt($activateAt)
+    {
+        $this->activateAt = $activateAt;
     }
     
     /**
