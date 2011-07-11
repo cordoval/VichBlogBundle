@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass name="Vich\BlogBundle\Entity\Tag" table="vb_post">
+
+        <field name="name" column="title" type="string" length="255" unique="true" />
+        
+        <field name="createdAt" column="created_at" type="datetime" />
+        
+        <field name="updatedAt" column="updated_at" type="datetime" />
+        
+        <lifecycle-callbacks>
+            
+            <lifecycle-callback type="prePersist" method="onPrePersist" />
+            
+            <lifecycle-callback type="preUpdate" method="onPreUpdate" />
+            
+        </lifecycle-callbacks>
+
+    </mapped-superclass>
+
+</doctrine-mapping>

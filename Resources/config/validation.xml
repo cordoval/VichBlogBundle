@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping
+        http://symfony.com/schema/dic/services/constraint-mapping-1.0.xsd">
+
+    <class name="Vich\BlogBundle\Model\Post">
+        
+    </class>
+
+    <class name="Vich\BlogBundle\Model\Tag">
+        
+    </class>
+
+    <class name="Vich\BlogBundle\Model\Category">
+        
+    </class>
+        
+</constraint-mapping>
