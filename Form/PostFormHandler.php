@@ -21,7 +21,7 @@ class PostFormHandler
     /**
      * Constructs a new instance of PostFormHandler.
      * 
-     * @param PostManagerInterface $postManager The post manager
+     * @param Vich\BlogBundle\Model\PostManagerInterface $postManager The post manager
      */
     public function __construct(PostManagerInterface $postManager)
     {
@@ -31,8 +31,8 @@ class PostFormHandler
     /**
      * Processes the form.
      * 
-     * @param Request $request The request
-     * @param Form $form The form
+     * @param Symfony\Component\HttpFoundation\Request $request The request
+     * @param Symfony\Component\Form\Form $form The form
      * @return boolean True if processed successfully, false otherwise
      */
     public function processForm(Request $request, Form $form)
