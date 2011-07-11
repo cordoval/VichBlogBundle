@@ -6,8 +6,16 @@
     
     <services>
         
-        <service id="vich_blog.form_handler.post" class="Vich\BlogBundle\Form\PostFormHandler">
+        <service id="vich_blog.form.handler.post" class="Vich\BlogBundle\Form\PostFormHandler">
             <argument type="service" id="vich_blog.post_manager" />
+        </service>
+        
+        <service id="vich_blog.form.handler.tag" class="Vich\BlogBundle\Form\TagFormHandler">
+            <argument type="service" id="vich_blog.tag_manager" />
+        </service>
+        
+        <service id="vich_blog.form.handler.category" class="Vich\BlogBundle\Form\CategoryFormHandler">
+            <argument type="service" id="vich_blog.category_manager" />
         </service>
         
     </services>
