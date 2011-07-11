@@ -13,6 +13,10 @@ interface PostInterface
     
     function setTitle($title);
     
+    function getSlug();
+    
+    function setSlug($slug);
+    
     function getBody();
     
     function setBody($body);

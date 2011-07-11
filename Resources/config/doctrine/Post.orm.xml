@@ -7,6 +7,8 @@
     <mapped-superclass name="Vich\BlogBundle\Entity\Post" table="vb_post">
 
         <field name="title" column="title" type="string" length="255" unique="true" />
+        
+        <field name="slug" column="slug" type="string" length="255" unique="true" />
 
         <field name="body" column="body" type="text" />
 

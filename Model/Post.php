@@ -20,6 +20,11 @@ abstract class Post implements PostInterface
     protected $title;
     
     /**
+     * @var string $slug
+     */
+    protected $slug;
+    
+    /**
      * @var string $body
      */
     protected $body;
@@ -67,6 +72,26 @@ abstract class Post implements PostInterface
     public function setTitle($title)
     {
         $this->title = $title;
+    }
+    
+    /**
+     * Gets the slug.
+     * 
+     * @return string The slug
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+    
+    /**
+     * Sets the slug.
+     * 
+     * @param string The slug
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
     }
     
     /**
