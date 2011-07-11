@@ -31,7 +31,7 @@ class VichBlogExtension extends Extension
         
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         
-        $toLoad = array();
+        $toLoad = array('form.xml');
         foreach ($toLoad as $file) {
             $loader->load($file);
         }
