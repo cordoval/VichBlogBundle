@@ -1,2 +1,2 @@
-GeographicalBundle
-==================
+BlogBundle
+==========
