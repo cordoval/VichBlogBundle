@@ -7,7 +7,7 @@ namespace Vich\BlogBundle\Model;
  *
  * @author Dustin Dobervich <ddobervich@gmail.com>
  */
-class Tag implements TagInterface
+abstract class Tag implements TagInterface
 {
     /**
      * @var integer $id

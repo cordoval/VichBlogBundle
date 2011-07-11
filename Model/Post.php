@@ -7,7 +7,7 @@ namespace Vich\BlogBundle\Model;
  *
  * @author Dustin Dobervich <ddobervich@gmail.com>
  */
-class Post implements PostInterface
+abstract class Post implements PostInterface
 {
     /**
      * @var integer $id

@@ -7,7 +7,7 @@ namespace Vich\BlogBundle\Model;
  *
  * @author Dustin Dobervich <ddobervich@gmail.com>
  */
-class Category implements CategoryInterface
+abstract class Category implements CategoryInterface
 {
     /**
      * @var integer $id
