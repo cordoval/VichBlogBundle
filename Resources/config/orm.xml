@@ -10,6 +10,16 @@
             <argument>%vich_blog.model.post.class%</argument>
         </service>
         
+        <service id="vich_blog.manager.tag.default" class="Vich\BlogBundle\Entity\TagManager">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%vich_blog.model.tag.class%</argument>
+        </service>
+        
+        <service id="vich_blog.manager.category.default" class="Vich\BlogBundle\Entity\CategoryManager">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%vich_blog.model.category.class%</argument>
+        </service>
+        
     </services>
 
 </container>
