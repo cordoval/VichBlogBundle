@@ -2,7 +2,27 @@
 <routes xmlns="http://symfony.com/schema/routing"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
-
     
+    <route id="vich_blog_post_edit" pattern="/{slug}/edit">
+        <default key="_controller">VichBlogBundle:Post:edit</default>
+    </route>
+    
+    <route id="vich_blog_post_delete" pattern="/{slug}/delete">
+        <default key="_controller">VichBlogBundle:Post:delete</default>
+    </route>
+    
+    <route id="vich_blog_post_list" pattern="/list">
+        <default key="_controller">VichBlogBundle:Post:list</default>
+        <requirement key="_method">GET</requirement>
+    </route>
+    
+    <route id="vich_blog_post_new" pattern="/new">
+        <default key="_controller">VichBlogBundle:Post:new</default>
+    </route>
+    
+    <route id="vich_blog_post_show" pattern="/{slug}">
+        <default key="_controller">VichBlogBundle:Post:show</default>
+        <requirement key="_method">GET</requirement>
+    </route>
 
 </routes>

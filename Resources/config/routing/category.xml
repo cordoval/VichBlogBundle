@@ -3,6 +3,26 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
 
+    <route id="vich_blog_category_edit" pattern="/{slug}/edit">
+        <default key="_controller">VichBlogBundle:Category:edit</default>
+    </route>
     
+    <route id="vich_blog_category_delete" pattern="/{slug}/delete">
+        <default key="_controller">VichBlogBundle:Category:delete</default>
+    </route>
+    
+    <route id="vich_blog_category_list" pattern="/list">
+        <default key="_controller">VichBlogBundle:Category:list</default>
+        <requirement key="_method">GET</requirement>
+    </route>
+    
+    <route id="vich_blog_category_new" pattern="/new">
+        <default key="_controller">VichBlogBundle:Category:new</default>
+    </route>
+    
+    <route id="vich_blog_category_show" pattern="/{slug}">
+        <default key="_controller">VichBlogBundle:Category:show</default>
+        <requirement key="_method">GET</requirement>
+    </route>
 
 </routes>
