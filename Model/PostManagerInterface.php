@@ -17,5 +17,7 @@ interface PostManagerInterface
     
     function findPostBySlug($slug);
     
+    function findPosts();
+    
     function getClass();
 }

@@ -85,6 +85,16 @@ class PostManager extends BasePostManager
     }
     
     /**
+     * Finds all of the posts.
+     * 
+     * @return \Traversable The posts
+     */
+    public function findPosts()
+    {
+        return $this->repository->findAll();
+    }
+    
+    /**
      * Gets the post class.
      * 
      * @return string The post class name
