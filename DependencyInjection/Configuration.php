@@ -43,6 +43,12 @@ class Configuration
                         ->end()
                     ->end()
                 ->end()
+                ->arrayNode('template')
+                    ->addDefaultsIfNotSet()
+                    ->children()
+                        ->scalarNode('engine')->cannotBeEmpty()->defaultValue('twig')->end()
+                    ->end()
+                ->end()
             ->end()
         ;
         

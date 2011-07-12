@@ -52,5 +52,7 @@ class VichBlogExtension extends Extension
             $container->setParameter(sprintf('vich_blog.model.%s.class', $model), $config['model'][$model]);
             $container->setAlias(sprintf('vich_blog.%s_manager', $model), $config['service']['manager'][$model]);
         }
+        
+        $container->setParameter('vich_blog.template.engine', $config['template']['engine']);
     }
 }
